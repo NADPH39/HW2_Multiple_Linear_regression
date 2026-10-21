@@ -4,7 +4,7 @@
 
 | 項目 | 連結 / 說明 |
 |---|---|
-| 🌐 線上網頁 (Web) | `https://<你的app名稱>.streamlit.app`　← 部署後填入 |
+| 🌐 線上網頁 (Web) | `[https://<你的app名稱>.streamlit.app](https://hw2multiplelinearregression-qi2mn5cjqmwa6xaezrkznr.streamlit.app/)`　← 部署後填入 |
 | 💻 GitHub | `https://github.com/<你的帳號>/HW2_MLR`　← 上傳後填入 |
 | 📊 主要資料集 (Problem 1) | [WHO Life Expectancy — Kaggle](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)（2,938 筆，21 個特徵） |
 | 📊 第二資料集 (Problem 2) | [Student Alcohol Consumption（student-mat.csv）— Kaggle](https://www.kaggle.com/datasets/uciml/student-alcohol-consumption)（395 筆，32 個特徵） |
