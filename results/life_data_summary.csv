@@ -1,0 +1,23 @@
+column,dtype,missing,unique,mean,std,min,max
+Country,categorical,0,193,,,,
+Year,numeric,0,16,2007.5187,4.6138,2000.0,2015.0
+Status,categorical,0,2,,,,
+Life expectancy,numeric,10,362,69.2249,9.5239,36.3,89.0
+Adult Mortality,numeric,10,425,164.7964,124.2921,1.0,723.0
+infant deaths,numeric,0,209,30.3039,117.9265,0.0,1800.0
+Alcohol,numeric,194,1076,4.6029,4.0524,0.01,17.87
+percentage expenditure,numeric,0,2328,738.2513,1987.9149,0.0,19479.91161
+Hepatitis B,numeric,553,87,80.9405,25.07,1.0,99.0
+Measles,numeric,0,958,2419.5922,11467.2725,0.0,212183.0
+BMI,numeric,34,608,38.3212,20.044,1.0,87.3
+under-five deaths,numeric,0,252,42.0357,160.4455,0.0,2500.0
+Polio,numeric,19,73,82.5502,23.428,3.0,99.0
+Total expenditure,numeric,226,818,5.9382,2.4983,0.37,17.6
+Diphtheria,numeric,19,81,82.3241,23.7169,2.0,99.0
+HIV/AIDS,numeric,0,200,1.7421,5.0778,0.1,50.6
+GDP,numeric,448,2490,7483.1585,14270.1693,1.68135,119172.7418
+Population,numeric,652,2278,12753375.1201,61012096.5084,34.0,1293859294.0
+thinness 1-19 years,numeric,34,200,4.8397,4.4202,0.1,27.7
+thinness 5-9 years,numeric,34,207,4.8703,4.5089,0.1,28.6
+Income composition of resources,numeric,167,625,0.6276,0.2109,0.0,0.948
+Schooling,numeric,163,173,11.9928,3.3589,0.0,20.7

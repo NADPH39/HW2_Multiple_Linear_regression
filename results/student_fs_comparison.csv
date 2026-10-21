@@ -1,0 +1,8 @@
+method,k,MAE,MSE,RMSE,R2,Adj_R2,cv_R2,features
+All features (不做選擇),41,1.64667,5.65664,2.37837,0.72413,0.41844,0.80385,"age, Medu, Fedu, traveltime, studytime, failures, famrel, freetime, goout, Dalc, Walc, health, absences, G1, G2, school_MS, sex_M, address_U, famsize_LE3, Pstatus_T, Mjob_health, Mjob_other, Mjob_services, Mjob_teacher, Fjob_health, Fjob_other, Fjob_services, Fjob_teacher, reason_home, reason_other, reason_reputation, guardian_mother, guardian_other, schoolsup_yes, famsup_yes, paid_yes, activities_yes, nursery_yes, higher_yes, internet_yes, romantic_yes"
+Correlation |r| top-k,10,1.31625,4.64882,2.15611,0.77328,0.73994,0.82464,"G2, G1, failures, Medu, higher_yes, paid_yes, age, studytime, Fedu, romantic_yes"
+SelectKBest (F-test),10,1.31625,4.64882,2.15611,0.77328,0.73994,0.82464,"age, Medu, Fedu, studytime, failures, G1, G2, paid_yes, higher_yes, romantic_yes"
+RFE (Recursive Feature Elimination),10,1.51972,5.1945,2.27915,0.74667,0.70942,0.84005,"failures, famrel, absences, G1, G2, Fjob_services, reason_home, schoolsup_yes, activities_yes, romantic_yes"
+"Lasso (L1, LassoCV)",10,1.51972,5.1945,2.27915,0.74667,0.70942,0.84005,"G2, G1, absences, famrel, failures, activities_yes, romantic_yes, Fjob_services, schoolsup_yes, reason_home"
+Sequential Forward Selection,10,1.51972,5.1945,2.27915,0.74667,0.70942,0.84005,"failures, famrel, absences, G1, G2, Fjob_services, reason_home, schoolsup_yes, activities_yes, romantic_yes"
+Backward Elimination (p < 0.05),10,1.52728,5.19767,2.27984,0.74652,0.70924,0.84117,"failures, famrel, absences, G1, G2, Fjob_other, reason_home, schoolsup_yes, activities_yes, romantic_yes"

@@ -1,0 +1,119 @@
+{
+  "problem": "Problem 1：國家平均壽命預測 (WHO Life Expectancy, 21 features)",
+  "kaggle": "https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who",
+  "shape": [
+    2938,
+    22
+  ],
+  "target": "Life expectancy",
+  "n_features_raw": 21,
+  "missing_total": 2563,
+  "target_desc": {
+    "count": 2928.0,
+    "mean": 69.2249,
+    "std": 9.5239,
+    "min": 36.3,
+    "25%": 63.1,
+    "50%": 72.1,
+    "75%": 75.7,
+    "max": 89.0
+  },
+  "n_features_encoded": 20,
+  "n_train": 2342,
+  "n_test": 586,
+  "prep_notes": [
+    "移除 10 筆 target 缺值的資料",
+    "類別數 >30 而捨棄：Country",
+    "以訓練集中位數/眾數補齊 2513 個缺值",
+    "One-Hot (drop_first) 編碼 1 個類別欄位"
+  ],
+  "fs_comparison_k": 10,
+  "final_method": "SelectKBest (F-test) → VIF<10 → Backward elimination",
+  "final_k": 11,
+  "final_features": [
+    "Adult Mortality",
+    "infant deaths",
+    "BMI",
+    "Polio",
+    "Diphtheria",
+    "HIV/AIDS",
+    "GDP",
+    "thinness 1-19 years",
+    "Income composition of resources",
+    "Schooling",
+    "Status_Developing"
+  ],
+  "k_selectkbest": 15,
+  "vif_dropped": [
+    "under-five deaths"
+  ],
+  "pvalue_dropped": [
+    "thinness 5-9 years",
+    "Alcohol",
+    "percentage expenditure"
+  ],
+  "train": {
+    "R2": 0.8076860879111595,
+    "Adj_R2": 0.8067781681545169,
+    "F": 889.6007405961842,
+    "F_p": 0.0
+  },
+  "test": {
+    "MAE": 3.004979780427188,
+    "MSE": 16.45667071192854,
+    "RMSE": 4.0566822295970555,
+    "R2": 0.8097481569810444,
+    "Adj_R2": 0.8061022157385209
+  },
+  "cv_R2": [
+    0.8038792813604788,
+    0.013464043294273058
+  ],
+  "interval": {
+    "PI_coverage": 0.9402730375426621,
+    "PI_avg_width": 16.55319946258026,
+    "CI_avg_width": 1.0590529325205296
+  },
+  "diagnostics": {
+    "Jarque_Bera": 301.5686400806809,
+    "JB_p": 3.274928698063615e-66,
+    "skew": -0.20093426707335035,
+    "kurtosis": 4.711394762238586,
+    "Breusch_Pagan_LM": 286.3317795543566,
+    "BP_p": 6.607468161379316e-55,
+    "Durbin_Watson": 2.0003036219845005
+  },
+  "vif_max": 3.201302673319636,
+  "baseline_all_features": {
+    "MAE": 2.9273269160236306,
+    "MSE": 15.614220578184089,
+    "RMSE": 3.9514833389733646,
+    "R2": 0.8194875321804443,
+    "Adj_R2": 0.8130977103107255
+  },
+  "ridge_all": {
+    "MAE": 2.925953183305137,
+    "MSE": 15.621130572959087,
+    "RMSE": 3.9523575967970164,
+    "R2": 0.8194076472958156,
+    "Adj_R2": 0.8130149976425701
+  },
+  "lasso_all": {
+    "MAE": 2.9249617381897526,
+    "MSE": 15.64346158977229,
+    "RMSE": 3.955181612741985,
+    "R2": 0.8191494834679327,
+    "Adj_R2": 0.8127476952721073
+  },
+  "simple_lr": {
+    "feature": "Schooling",
+    "R2_train": 0.5055114288470887,
+    "test": {
+      "MAE": 4.639579605168192,
+      "MSE": 38.774447686256096,
+      "RMSE": 6.226913174780591,
+      "R2": 0.5517373918768891,
+      "Adj_R2": 0.5509698189177742
+    }
+  }
+}
